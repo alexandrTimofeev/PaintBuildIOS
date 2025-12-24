@@ -1,10 +1,7 @@
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using Unity.Cinemachine;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class MovebleObjectInput

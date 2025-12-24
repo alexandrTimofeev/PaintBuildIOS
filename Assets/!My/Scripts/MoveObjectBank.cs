@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
-using TMPro.EditorUtilities;
+using TMPro;
 using UnityEngine;
 
 public static class MoveObjectBank
