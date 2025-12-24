@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977f2bab01538ca42a781aaab5c4171f, type: 3}
+  m_Name: GameSessionDataContainer
+  m_EditorClassIdentifier: Assembly-CSharp::GameSessionDataContainer
+  HealthContainer:
+    Title: 
+    _value: 0
+    _clampRange: {x: 0, y: 0}
+  speedGame: 0
+  TimerPhase: 0
+  AnGroundBonus: 0
+  StandartLevelData: 
+  UseSpawnManager: 0
+  MoneyContainer:
+    Title: 
+    _value: 0
+    _clampRange: {x: 0, y: 0}
+  FirstSelectLayer:
+    serializedVersion: 2
+    m_Bits: 2
+  SelectLayer:
+    serializedVersion: 2
+    m_Bits: 435
+  MoveLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  WallLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  CreateVFX: {fileID: 342596716944753515, guid: f07af8ac3f660cd42aaaf3b0321e1323, type: 3}
+  DeliteVFX: {fileID: 2368406585876020822, guid: a0c87abc8fa900b438abfaf4ef419752, type: 3}
+  VisualVFX: {fileID: 7456184370817076635, guid: 75fe483e7433e0041a2244e9d88b6d5d, type: 3}
+  LightAngleSFX:
+    ID: LightAngle
+    clip: {fileID: 8300000, guid: 568470e29bef88c4aaa027db357be957, type: 3}
+    volume: 0.06
+    pitch: 0.5
+    pitchOffserRnd: 0.02
+    volumeOffserRnd: 0.01
+    IsUseReverb: 0
+    reverbPreset: 0
+  LightPowerSFX:
+    ID: LightPower
+    clip: {fileID: 8300000, guid: 146d4b19f95fe6d40832414952b4ea39, type: 3}
+    volume: 0.04
+    pitch: 0.3
+    pitchOffserRnd: 0.03
+    volumeOffserRnd: 0.01
+    IsUseReverb: 0
+    reverbPreset: 0
+  ScreenshootSFX:
+    ID: Screenshot
+    clip: {fileID: 8300000, guid: 006910ae2cc6e426c9797a60920c1243, type: 3}
+    volume: 0.3
+    pitch: 1
+    pitchOffserRnd: 0
+    volumeOffserRnd: 0
+    IsUseReverb: 0
+    reverbPreset: 0
+  ChangeObSizeSFX:
+    ID: ChangeObSize
+    clip: {fileID: 8300000, guid: 568470e29bef88c4aaa027db357be957, type: 3}
+    volume: 0.04
+    pitch: 0.5
+    pitchOffserRnd: 0.02
+    volumeOffserRnd: 0.01
+    IsUseReverb: 0
+    reverbPreset: 0
+  ChangeObPositionSFX:
+    ID: ChangeObPos
+    clip: {fileID: 8300000, guid: bf0938dc5667ff34aa2616789bb48a17, type: 3}
+    volume: 0.015
+    pitch: 1.5
+    pitchOffserRnd: 0.05
+    volumeOffserRnd: 0.01
+    IsUseReverb: 0
+    reverbPreset: 0
+  movebleObjectsPrefs:
+  - {fileID: 6138908532053544798, guid: af25f45bd18818e48a5ce9ddfcce28e2, type: 3}
+  - {fileID: 535229157410268238, guid: 27f8ecc6b15f77d4a8004fc737edc28f, type: 3}
+  - {fileID: 4042422686523420464, guid: 8da03f51f89518d44b5dfe889f83ca9c, type: 3}
+  - {fileID: 4225329005470354516, guid: a8ebf04b0b20a7a42aa4643a275559b1, type: 3}
+  - {fileID: 5847667589345771405, guid: 38820113b4b857d49a995535e80c30e7, type: 3}
+  - {fileID: 1077625694100958705, guid: 4ac40ecda5e3fbc46a715b1730e99744, type: 3}
+  - {fileID: 4997635467457363754, guid: 841150000ef01814b982b2df63aaf34b, type: 3}
+  - {fileID: 3751126106241120612, guid: 2f7ab0a2e5cf61d4ca82ffd2a5526b88, type: 3}
+  - {fileID: 1216247892617727382, guid: 02ff87f87a88b4540819dda5ee415e3b, type: 3}
+  - {fileID: 5648128789880451814, guid: 56818521d336fab489a179e0bd9afeaa, type: 3}
+  - {fileID: 544957925781410152, guid: 1c15fb775db89c342a7d0a55c45e709f, type: 3}
+  - {fileID: 2176288916221366862, guid: 1c525574ed9ff304190cb64a3091b40c, type: 3}
+  - {fileID: 1629065102758968018, guid: d0bf2c3d741c5964d9a947f7d29a82d2, type: 3}
+  - {fileID: 1778635894954688615, guid: 3768ecf6d62c6724e892982fb69a8e7a, type: 3}
+  - {fileID: 4207049204740448802, guid: cfff8c6272915644a8e4b5e0a41f114f, type: 3}
+  - {fileID: 5984810485356324385, guid: 22472ebd5b5a0c243a1754d9521e0515, type: 3}
+  - {fileID: 2648659961306677187, guid: 0e1eb961f120632498e838c99d957abb, type: 3}
+  - {fileID: 1816178833184364161, guid: 0e1a9f95f42e66f49be41aea993ca7a8, type: 3}
+  - {fileID: 3869961741219880679, guid: 09457ffae7f5d5a4f9ca136a40d48dd3, type: 3}
+  - {fileID: 2856473995129530111, guid: eb28918d6bd5d5449bb53231511e4974, type: 3}
+  - {fileID: 6577640212441671391, guid: 1535008706db6034bb9fd29ee515d709, type: 3}
+  - {fileID: 7616376613207979120, guid: c8d23fb145b4de94e89203022cddf3e0, type: 3}
+  - {fileID: 3476506829666210877, guid: 79741f7bcf230a64ebc29d7469a06933, type: 3}
+  - {fileID: 2969440200993721240, guid: 531c624e990d8ee41aa54e6ebd33efb4, type: 3}
+  - {fileID: 2561405557475270097, guid: 614aa74b05b354945aa2416d3abdea5b, type: 3}
