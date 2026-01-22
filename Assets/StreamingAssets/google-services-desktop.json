@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "421176281027",
+    "project_id": "draw-a-snow-city",
+    "storage_bucket": "draw-a-snow-city.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421176281027:ios:8dcf82e0b71ac125785f76",
+        "android_client_info": {
+          "package_name": "com.snk.draw-a-snow-city"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhkPYKjC86BiMhlY9g3GzLkEJTG43TVjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
