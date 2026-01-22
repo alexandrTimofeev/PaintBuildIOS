@@ -26,6 +26,8 @@ public class WeatherManager : MonoBehaviour
     public float LightValue => sliderLight.value;
     public int State => state;
 
+    [HideInInspector] public float TimeInScene { get; private set; }
+
     public static WeatherManager Instance;
 
     void Start()
@@ -34,6 +36,8 @@ public class WeatherManager : MonoBehaviour
 
         sliderRotation.onValueChanged.AddListener(SetSliderRotation);
         sliderLight.onValueChanged.AddListener(SetSliderLight);
+
+        TimeInScene = 0f;
     }
 
     public void SetSliderLight(float arg0)
@@ -105,5 +109,10 @@ public class WeatherManager : MonoBehaviour
         SetSliderRotation(0.5f);
         SetSliderLight(0.5f);
         SetSlidersValue(0.5f, 0.5f);
+    }
+
+    private void Update()
+    {
+        TimeInScene += Time.deltaTime;
     }
 }

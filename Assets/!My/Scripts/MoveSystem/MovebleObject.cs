@@ -74,8 +74,11 @@ public class MovebleObject : MonoBehaviour
         for (int i = 0; i < visuals.Length; i++)
             visuals[i].SetActive(currentVisual == i);
 
-        GameObject vfx = GameObject.Instantiate(GameEntryGameplayCCh.DataContainer.VisualVFX,
+        if (GameEntryGameplayCCh.weatherManager.TimeInScene > 0.5f)
+        {
+            GameObject vfx = GameObject.Instantiate(GameEntryGameplayCCh.DataContainer.VisualVFX,
             transform.position, transform.rotation);
-        GameObject.Destroy(vfx, 10f);
+            GameObject.Destroy(vfx, 10f);
+        }
     }
 }

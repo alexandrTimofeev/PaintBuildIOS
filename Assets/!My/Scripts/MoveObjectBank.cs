@@ -42,11 +42,14 @@ public static class MoveObjectBank
             moveOb.transform.parent = parent.transform;
         //MoveObjectSystem.Select(moveOb);
 
-        GameObject ngo = GameObject.Instantiate(GameEntryGameplayCCh.DataContainer.CreateVFX,
-            moveOb.transform.position, moveOb.transform.rotation, moveOb.transform);
-        ngo.transform.localScale = Vector3.one;
+        if (GameEntryGameplayCCh.weatherManager.TimeInScene > 0.5f)
+        {
+            GameObject ngo = GameObject.Instantiate(GameEntryGameplayCCh.DataContainer.CreateVFX,
+                moveOb.transform.position, moveOb.transform.rotation, moveOb.transform);
+            ngo.transform.localScale = Vector3.one;
 
-        GameObject.Destroy(ngo, 10f);
+            GameObject.Destroy(ngo, 10f);
+        }
     }
 
     public static void CreateCurrentObject(Vector3 point, Vector3 normal, Transform parent = null)
