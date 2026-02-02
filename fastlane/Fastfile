@@ -63,7 +63,7 @@ platform :ios do
         #workspace: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcworkspace",
         project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
         scheme: ENV["XC_TARGET_NAME"],
-        xcargs: "-allowProvisioningUpdates",
+        xcargs: "-allowProvisioningUpdates IPHONEOS_DEPLOYMENT_TARGET=16.0",
         export_team_id: ENV["TEAM_ID"],
         verbose: true,
         export_options: {
@@ -126,7 +126,7 @@ platform :ios do
         workspace: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcworkspace",
         #project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
         scheme: ENV["XC_TARGET_NAME"],
-        xcargs: "-allowProvisioningUpdates",
+        xcargs: "-allowProvisioningUpdates IPHONEOS_DEPLOYMENT_TARGET=16.0",
         export_team_id: ENV["TEAM_ID"],
         verbose: true,
         export_options: {
