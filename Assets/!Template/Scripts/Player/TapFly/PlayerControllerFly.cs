@@ -39,7 +39,7 @@ public class PlayerControllerFly : MonoBehaviour
 
         if (isGroundPrev != IsGrounded)
         {
-            if (IsGrounded && rigidbody.linearVelocity.y < 0f)
+            if (IsGrounded && rigidbody.velocity.y < 0f)
             {
                 Destroy(Instantiate(vfxOnGround, transform.position + (Vector3.down * 1.5f), transform.rotation), 10f);
             }

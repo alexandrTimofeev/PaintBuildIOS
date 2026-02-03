@@ -111,7 +111,7 @@ public class ControllerPlayerEscape : Controller2DAction
     private void StartFly()
     {
         Rigidbody2D.gravityScale = 0f;
-        Rigidbody2D.linearVelocity = Vector2.zero;
+        Rigidbody2D.velocity = Vector2.zero;
         flyVFX.SetActive(true);
     }
 

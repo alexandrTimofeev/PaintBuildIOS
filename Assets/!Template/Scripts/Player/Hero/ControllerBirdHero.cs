@@ -81,7 +81,7 @@ public class ControllerBirdHero : Controller2DAction
     {
         StopDash();
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         //base.Push(new Vector2(force.x, force.y));
         base.Push(force);
     }
@@ -94,7 +94,7 @@ public class ControllerBirdHero : Controller2DAction
 
     private void EndDash()
     {
-        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0f, GetComponent<Rigidbody2D>().linearVelocity.y);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         isDash = false;
     }
