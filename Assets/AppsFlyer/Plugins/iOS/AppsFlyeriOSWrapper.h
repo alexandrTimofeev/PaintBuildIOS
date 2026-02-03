@@ -15,8 +15,8 @@
 #endif
 #if __has_include(<PurchaseConnector/PurchaseConnector.h>)
 #import <PurchaseConnector/PurchaseConnector.h>
-#else
-#import "PurchaseConnector.h"
+//#else
+//#import "PurchaseConnector.h"
 #endif
 #import <PurchaseConnector/PurchaseConnector-Swift.h>
 
