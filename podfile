@@ -2,16 +2,16 @@ platform :ios, '16.0'
 
 target 'Unity-iPhone' do
   use_frameworks!
-  pod 'AppsFlyerFramework', '~> 6.12'
-  pod 'Firebase/Core', '~> 10.24'
-  pod 'Firebase/Messaging', '~> 10.24'
-  pod 'Firebase/RemoteConfig', '~> 10.24'
+  pod 'AppsFlyerFramework'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/RemoteConfig'
 end
 
 target 'notifications' do
   use_frameworks!
-  pod 'Firebase/Core', '~> 10.24'
-  pod 'Firebase/Messaging', '~> 10.24'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 end
 
 post_install do |installer|
