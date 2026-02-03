@@ -2,7 +2,7 @@ platform :ios, '16.0'
 
 target 'Unity-iPhone' do
   use_frameworks!
-  pod 'AppsFlyerFramework', '~> 6.17.8'
+  pod 'AppsFlyerFramework', '6.17.8'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'Firebase/RemoteConfig'
