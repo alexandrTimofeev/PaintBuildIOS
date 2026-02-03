@@ -13,12 +13,12 @@
 #else
 #import "AppsFlyerLib.h"
 #endif
-#if __has_include(<PurchaseConnector/PurchaseConnector.h>)
-#import <PurchaseConnector/PurchaseConnector.h>
+//#if __has_include(<PurchaseConnector/PurchaseConnector.h>)
+//#import <PurchaseConnector/PurchaseConnector.h>
 //#else
 //#import "PurchaseConnector.h"
-#endif
-#import <PurchaseConnector/PurchaseConnector-Swift.h>
+//#endif
+//#import <PurchaseConnector/PurchaseConnector-Swift.h>
 
 // Add StoreKit 2 support
 #if __has_include(<StoreKit/StoreKit.h>)
