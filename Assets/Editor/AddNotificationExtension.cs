@@ -122,7 +122,7 @@ public static class AddNotificationExtension
         sb.AppendLine("use_frameworks!");
         sb.AppendLine();
         sb.AppendLine("target 'UnityFramework' do");
-        sb.AppendLine("  pod 'AppsFlyerFramework', '6.15.3'");
+        sb.AppendLine("  pod 'AppsFlyerFramework', '6.17.8'");
         sb.AppendLine("  pod 'FirebaseAnalytics', '11.10.0'");
         sb.AppendLine("  pod 'Firebase/Messaging', '11.10.0'");
         sb.AppendLine("end");
