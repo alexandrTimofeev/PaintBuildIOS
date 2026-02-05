@@ -39,8 +39,8 @@ public class SwordBehaviour : MonoBehaviour
 
     private bool IsCanJagle()
     {
-        Debug.Log($"IsCanJagle {Vector2.Angle(Vector2.down, transform.right)} {controllerBirdHero.Rigidbody2D.velocity.y}");
-        return Vector2.Angle(Vector2.down, transform.right) < angleJungle && controllerBirdHero.Rigidbody2D.velocity.y < 0;
+        Debug.Log($"IsCanJagle {Vector2.Angle(Vector2.down, transform.right)} {controllerBirdHero.Rigidbody2D.linearVelocity.y}");
+        return Vector2.Angle(Vector2.down, transform.right) < angleJungle && controllerBirdHero.Rigidbody2D.linearVelocity.y < 0;
     }
 
     private void DamageProcess(DamageContainer damageContainer)

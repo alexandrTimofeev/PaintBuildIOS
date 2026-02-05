@@ -23,7 +23,7 @@ public class VelectoryRotate : MonoBehaviour
         if (sprites == null || sprites.Length == 0 || renderer == null)
             return;
 
-        float vy = rigidbody2D.velocity.y;
+        float vy = rigidbody2D.linearVelocity.y;
 
         // Clamp vy между min и max
         float t = Mathf.InverseLerp(velocityYRange.x, velocityYRange.y, vy);
@@ -36,7 +36,7 @@ public class VelectoryRotate : MonoBehaviour
         if (source)
         {
             source.pitch = Mathf.Lerp(velocityYRangePitch.x, velocityYRangePitch.y, t);
-            float vx = rigidbody2D.velocity.x;
+            float vx = rigidbody2D.linearVelocity.x;
             float tx = Mathf.InverseLerp(0, velocityYRange.y * 10, vx);
             source.volume = Mathf.Lerp(velocityYRangeVoume.x, velocityYRangeVoume.y, tx);
         }

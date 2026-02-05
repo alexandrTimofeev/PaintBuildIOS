@@ -62,7 +62,7 @@ public class Controller2DAction : MonoBehaviour
         {
             //isGrounded = false;
             Vector2 force = ForceJump;
-            rigidbody2D.velocity = Vector2.zero;
+            rigidbody2D.linearVelocity = Vector2.zero;
             rigidbody2D.AddForce(force, ForceMode2D.Impulse);
         }
     }
@@ -98,7 +98,7 @@ public class Controller2DAction : MonoBehaviour
 
     public virtual void StopImmidiatly()
     {
-        rigidbody2D.velocity = Vector2.zero;
+        rigidbody2D.linearVelocity = Vector2.zero;
     }
 
     public virtual void Push(Vector2 force)
